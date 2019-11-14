@@ -1,7 +1,18 @@
-{% extends '_layouts/detail.njk' %}
+{% extends '_layouts/base.njk' %}
 
-{% block story %}
-  <h2>It was a dark and stormy night</h2>
-  <h5>Captain's log, Oct. XX, 2018</h5>
-  <p>Interloper crimp spanker Barbary Coast splice the main brace bilged on her anchor black spot chandler trysail salmagundi. Brigantine fire ship scallywag log squiffy bowsprit lateen sail American Main cog smartly. Dance the hempen jig bilge log galleon pirate yard list Barbary Coast Corsair run a rig.</p>
+{% block content %}
+<article class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      {% block info %}<img src="https://via.placeholder.com/400.jpg?text=Placeholder+Image" alt="placeholder image" class="img-fluid">
+      <h6>{{ discography.image }}</h6>
+      {% endblock %}
+    </div>
+    <div class="col-sm-8">
+      {% block story %}
+      <h2>{{ discography.title }}</h2>
+      <p>{{ discography.year }}</p>
+      {% endblock %}
+  </div>
+</article>
 {% endblock %}

@@ -4,11 +4,19 @@
 <article class="container">
   <div class="row">
     <div class="col-sm-4 left-rail">
-      {% block info %}{% endblock %}
+      {% block info %}<img src="https://via.placeholder.com/400.jpg?text=Placeholder+Image" alt="placeholder image" class="img-fluid">
+      <h6>{{ members.image }}</h6>
+      {% endblock %}
     </div>
     <div class="col-sm-8">
-      {% block story %}{% endblock %}
-
+      {% block story %}
+      <h2>{{ members.name }}</h2>
+      <p>{{ members.instruments }}</p>
+      <p>{{ members.tenure }}</p>
+      <p>{{ members.birthplace }}</p>
+      <p>{{ members.birthdate }}</p>
+      <p>{{ members.text | safe }}</p>
+      {% endblock %}
     </div>
   </div>
 </article>
