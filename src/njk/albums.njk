@@ -2,8 +2,8 @@
 
 {% block content %}
 <article class="container">
-{% for discography in data.discography%}
   <div class="row">
+  {% for discography in data.discography%}
     <div class="col-sm-6">
       <div class="row">
         <div class="col-sm-8">
@@ -16,19 +16,7 @@
         </div>
       </div>
     </div>
-    <div class="col-sm-6">
-      <div class="row">
-        <div class="col-sm-8">
-          <img src="img/discs/{{ discography.image }}" alt="Responsive image" class="img-fluid">
-          <h6>{{ discography.image }}</h6>
-        </div>
-        <div class="col-sm-4">
-          <h2>{{ discography.title }}</h2>
-          <p>{{ discography.year }}</p>
-        </div>
-      </div>
-    </div>
+    {% endfor %}
   </div>
-{% endfor %}
 </article>
 {% endblock %}
