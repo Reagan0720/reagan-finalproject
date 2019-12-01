@@ -10,11 +10,11 @@
     </div>
     <div class="col-sm-8">
       {% block story %}
-      <h2>{{ members.name }}</h2>
-      <p>{{ members.instruments }}</p>
-      <p>{{ members.tenure }}</p>
-      <p>{{ members.birthplace }}</p>
-      <p>{{ members.birthdate }}</p>
+      <h2 class= "title">{{ members.name }}</h2>
+      <p>Instruments: {{ members.instruments }}</p>
+      <p>Tenure: {{ members.tenure }}</p>
+      <p>Hometown: {{ members.birthplace }}</p>
+      <p>Birthdate: {{ members.birthdate }}</p>
       <p>{{ members.text | safe }}</p>
       {% endblock %}
     </div>
