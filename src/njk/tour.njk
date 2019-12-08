@@ -1,0 +1,27 @@
+{% extends '_layouts/base.njk' %}
+
+{% block page_title %} Tour Dates {% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center">
+  <h1>Tour Dates</h1>
+</div>
+<article class= "container">
+  <div class="tour">
+    <h1> Queen 2020 Tour Schedule <h1>
+  </div>
+  <div class="row">
+  {% for tourdates in tourdates.tourdates %}
+    <div class= "col-sm-6">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2>{{ tourdates.city }}</h2>
+          <p>{{ tourdates.date }}</p>
+          <p>{{ tourdates.venue }}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+</article>
+{% endblock %}
