@@ -1,13 +1,13 @@
 .jumbotron.banner {
-  background: url(../img/queen-band-wallpaper-thin.jpg);
+  background: url(../img/queen-band-wallpaper-thin.jpg) no-repeat center;
   background-size: cover;
   color: white;
-  padding: 250px;
-  padding-top: 12rem;
+  padding: 125px 25px 175px;
 }
 .jumbotron {
   margin-bottom: 30px;
 }
-h1 {
-  font-size: 600%;
+.jumbotron h1 {
+  font-size: 400%;
+  font-family: "Playfair Display";
 }

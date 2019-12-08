@@ -1,6 +1,6 @@
 {% extends '_layouts/base.njk' %}
 
-{% block page_title %}New index page title{% endblock %}
+{% block page_title %}Home{% endblock %}
 
 {% block content %}
 {% include "_partials/jumbotron.njk" %}
@@ -24,7 +24,7 @@
       {% for members in data.members%}
       <div class= "col-sm-3">
         <div class="card mb-4">
-        <img class="card-img-top" src="img/members/{{ members.imagebw }}" alt="Card image cap">
+        <img class="card-img-top" src="img/members/{{ members.imagebw }}" alt="Responsive image">
         <div class="card-body">
           <h5 class="card-title">{{ members.name}}</h5>
           <a href="{{ members.slug }}.html" class="btn btn-primary">About</a>

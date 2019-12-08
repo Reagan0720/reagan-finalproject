@@ -1,5 +1,7 @@
 {% extends '_layouts/base.njk' %}
 
+{% block page_title %}Albums{% endblock %}
+
 {% block content %}
 <div class="jumbotron banner text-center">
   <h1>Albums</h1>
@@ -9,12 +11,12 @@
   {% for discography in data.discography%}
     <div class="col-sm-6">
       <div class="row">
-        <div class="col-sm-8">
-          <img src="img/discs/{{ discography.image }}" alt="Responsive image" id="img" class="img-fluid">
-        </div>
         <div id="details" class="col-sm-4">
           <h2>{{ discography.title }}</h2>
           <p>{{ discography.year }}</p>
+        </div>
+        <div class="col-sm-8">
+          <img src="img/discs/{{ discography.image }}" alt="Responsive image" id="img" class="img-fluid">
         </div>
       </div>
     </div>
